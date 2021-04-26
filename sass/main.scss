@@ -6,6 +6,7 @@
 @import "./utils/container";
 @import "./utils/img";
 @import "./utils/section";
+@import "./utils/breakpoints";
 
 /*шапка*/
 @import "./components/header/page-header";
@@ -32,5 +33,5 @@
 @import "./components/footer/footer-form";
 /*портфолио*/
 @import "./components/portfolio/filters";
-@import "./components/portfolio/card-set";
+@import "./components/portfolio/projects";
 @import "./components/portfolio/card-overlay";
