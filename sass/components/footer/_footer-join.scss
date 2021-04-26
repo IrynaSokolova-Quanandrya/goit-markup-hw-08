@@ -1,0 +1,31 @@
+.join {
+  display: flex;
+  flex-direction: column;
+}
+.join__title,
+.footer__title {
+  font-size: 14px;
+  color: $backgroundColor;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.networks {
+  margin-left: 0;
+}
+.networks__item {
+  border-radius: 50%;
+}
+.networks__link--inverse {
+  background-color: #44454e;
+  color: $backgroundColor;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.networks__icon {
+  fill: currentColor;
+  margin: 12px;
+}
+.networks__link:hover,
+.networks__link:focus {
+  background-color: $accentColor;
+}

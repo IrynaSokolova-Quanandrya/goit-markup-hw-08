@@ -1,0 +1,36 @@
+@import "./base/normalize";
+
+/*утилиты*/
+@import "./utils/variables";
+@import "./utils/body";
+@import "./utils/container";
+@import "./utils/img";
+@import "./utils/section";
+
+/*шапка*/
+@import "./components/header/page-header";
+@import "./components/header/logo";
+@import "./components/header/header-contacts";
+@import "./components/header/navigation";
+/*герой*/
+@import "./components/hero/hero-bg";
+@import "./components/hero/modal-hero";
+@import "./components/hero/forms-modal-hero";
+/*секции*/
+@import "./components/sections/section";
+/*особенности*/
+@import "./components/sections/fetures";
+/*чем занимаемся*/
+@import "./components/sections/what-we-do";
+/*наша команда*/
+@import "./components/sections/our-team";
+/*постоянные клиенты*/
+@import "./components/sections/customers";
+/*подвал*/
+@import "./components/footer/footer-contacts";
+@import "./components/footer/footer-join";
+@import "./components/footer/footer-form";
+/*портфолио*/
+@import "./components/portfolio/filters";
+@import "./components/portfolio/card-set";
+@import "./components/portfolio/card-overlay";

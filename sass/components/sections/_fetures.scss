@@ -1,0 +1,46 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  border: 0;
+  margin: -1px;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.fetures {
+  margin-left: -10px;
+  margin-top: -10px;
+}
+
+.fetures__item {
+  flex-basis: calc((100% - 4 * 30px) / 4);
+  width: 270px;
+}
+.fetures__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+}
+.fetures__title {
+  margin-bottom: 10px;
+  color: $titleTextColor;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+}
+
+.fetures__text {
+  margin-bottom: 0;
+  color: $primaryTextColor;
+
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
