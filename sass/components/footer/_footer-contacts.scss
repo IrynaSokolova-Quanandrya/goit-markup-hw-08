@@ -4,10 +4,16 @@
   background-color: #2f303a;
 }
 .footer__container {
-  display: flex;
-  align-items: baseline;
+  @media screen and (min-width: $mobile) {
+    display: inline-block;
+    text-align: center;
+  }
 }
-
+.footer__contacts {
+  @media screen and (min-width: $mobile) {
+    margin-bottom: 60px;
+  }
+}
 .footer__address {
   color: $backgroundColor;
 
@@ -21,10 +27,7 @@
 .footer__location {
   margin-bottom: 9px;
 }
-.footer__contacts {
-  display: inline-block;
-  margin-right: 70px;
-}
+
 .footer__logo {
   display: block;
   margin-bottom: 20px;

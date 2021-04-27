@@ -1,0 +1,28 @@
+.mobile__button {
+  @media screen and (max-width: 767px) {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+  }
+  & .mobile__close {
+    display: none;
+  }
+
+  &--is-open .mobile__close {
+    display: block;
+  }
+
+  &--is-open .mobile__open {
+    display: none;
+  }
+}
+
+.mobile__menu {
+  @media screen and (max-width: 767px) {
+    position: absolute;
+    width: 100%;
+    background-color: wheat;
+  }
+}
