@@ -1,9 +1,30 @@
 .filter {
-  margin-bottom: 34px;
-  justify-content: center;
+  @media screen and (min-width: $mobile) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    margin-top: -8px;
+    margin-left: -8px;
+  }
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 40px;
+    justify-content: center;
+  }
 }
-.filter__item:not(:last-child) {
-  margin-right: 8px;
+.filter__item {
+  @media screen and (min-width: $mobile) and (max-width: 768px) {
+    width: calc((100% - 3 * 8px) / 3);
+    margin-top: 8px;
+    margin-left: 8px;
+  }
+  @media screen and (min-width: $tablet) {
+    margin-right: 8px;
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
+  }
 }
 
 .filter__button {
