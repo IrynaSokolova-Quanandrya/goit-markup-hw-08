@@ -1,5 +1,8 @@
 .mobile__button {
   @media screen and (max-width: 767px) {
+    position: absolute;
+    top: 0;
+    right: 0;
     display: inline-flex;
     margin: 0;
     padding: 0;
@@ -7,6 +10,7 @@
     background-color: transparent;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
+    z-index: 2;
   }
   &:hover,
   &:focus {
@@ -16,11 +20,14 @@
     display: none;
   }
 
-  &--is-open .mobile__close {
+  &.is-open .mobile__close {
     display: block;
   }
 
-  &--is-open .mobile__open {
+  &.is-open .mobile__open {
+    display: none;
+  }
+  @media screen and (min-width: $tablet) {
     display: none;
   }
 }
@@ -28,7 +35,15 @@
 .mobile__menu {
   @media screen and (max-width: 767px) {
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    background-color: wheat;
+    background-color: $backgroundColor;
+    padding: 48px 40px;
+    display: none;
+
+    &.is-open {
+      display: block;
+    }
   }
 }

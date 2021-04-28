@@ -21,7 +21,7 @@
   }
 }
 .modal {
-  @media screen and (min-width: $deskdrop) {
+  @media screen and (min-width: $desktop) {
     position: absolute;
 
     top: 50%;
@@ -35,6 +35,15 @@
 
   background-color: $backgroundColor;
   border-radius: 4px;
+
+  @media screen and (min-width: $mobile) {
+    width: 450px;
+    height: 609px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .modal__button {
