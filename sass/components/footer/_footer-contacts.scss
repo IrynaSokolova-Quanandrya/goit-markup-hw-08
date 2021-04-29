@@ -13,10 +13,18 @@
     flex-wrap: wrap;
     justify-content: space-around;
   }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: baseline;
+  }
 }
 .footer__contacts {
   @media screen and (min-width: $mobile) {
     margin-bottom: 60px;
+  }
+  @media screen and (min-width: $desktop) {
+    display: inline-block;
+    margin-right: 70px;
   }
 }
 .footer__address {
