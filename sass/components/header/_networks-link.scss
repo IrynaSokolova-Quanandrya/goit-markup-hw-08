@@ -1,8 +1,9 @@
-.network {
+.network__list {
+  @extend .list;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 32px;
+
   @media screen and (min-width: $tablet) {
     display: none;
   }

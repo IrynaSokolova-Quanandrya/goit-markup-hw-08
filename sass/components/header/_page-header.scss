@@ -1,15 +1,11 @@
 .nav {
+  position: relative;
   box-sizing: border-box;
+
   margin-bottom: 0;
+  padding: 10px 15px;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.header {
-  position: relative;
-}
-
-.contacts {
-  @media screen and (max-width: 767px) {
-  }
+  align-content: center;
 }
