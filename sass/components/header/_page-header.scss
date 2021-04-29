@@ -1,6 +1,9 @@
 .nav {
   box-sizing: border-box;
   margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .header {
   position: relative;

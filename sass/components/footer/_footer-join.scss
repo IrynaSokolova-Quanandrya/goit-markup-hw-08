@@ -8,11 +8,8 @@
 .footer__title {
   font-size: 14px;
   color: $backgroundColor;
-
   text-transform: uppercase;
-  @media screen and (max-width: 767px) {
-    margin-bottom: 20px;
-  }
+  margin-bottom: 20px;
 }
 .networks {
   margin-left: 0;

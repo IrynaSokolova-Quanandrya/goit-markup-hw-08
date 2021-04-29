@@ -3,8 +3,11 @@
   justify-content: space-between;
   align-items: center;
   margin-top: 32px;
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
 }
-.network__item::after {
+.network__item:not(:last-child)::after {
   content: "";
   width: 1px;
   height: 22px;

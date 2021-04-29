@@ -1,23 +1,37 @@
 .nav {
   box-sizing: border-box;
   margin-bottom: 0;
-  padding-bottom: 151px;
 }
 .navigation {
+  @media screen and (min-width: $tablet) {
+    margin-left: 88px;
+    padding: 0;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-left: 93px;
+  }
+}
+.navigation__list {
+  @extend .list;
   @media screen and(max-width: 767px) {
     font-weight: 500;
     font-size: 40px;
     line-height: 1;
     letter-spacing: 0.02em;
+    padding-bottom: 151px;
   }
   @media screen and (min-width: $tablet) {
     display: flex;
-    margin-left: 93px;
   }
 }
 .navigation__item {
   @media screen and (max-width: 767px) {
     margin-bottom: 32px;
+  }
+}
+.navigation__item:not(:last-child) {
+  @media screen and(min-width: $tablet) {
+    margin-right: 45px;
   }
 }
 .navigation__link {
