@@ -1,6 +1,6 @@
 .mobile__button {
   @media screen and (max-width: 767px) {
-    position: absolute;
+    position: fixed;
     top: 10px;
     right: 15px;
     display: inline-flex;
@@ -34,7 +34,7 @@
 
 .mobile__menu {
   @media screen and (max-width: 767px) {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;

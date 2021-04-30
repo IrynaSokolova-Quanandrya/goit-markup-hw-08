@@ -305,7 +305,6 @@ ul {
 }
 
 .container {
-  width: 100%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
@@ -313,7 +312,7 @@ ul {
   padding-right: 15px;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 480px) {
   .container {
     width: 480px;
   }
@@ -366,9 +365,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -606,7 +605,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .mobile__button {
-    position: absolute;
+    position: fixed;
     top: 10px;
     right: 15px;
     display: -webkit-inline-box;
@@ -647,7 +646,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .mobile__menu {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
