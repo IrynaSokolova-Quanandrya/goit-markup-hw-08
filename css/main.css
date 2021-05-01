@@ -1081,6 +1081,12 @@ img {
   padding-top: 0;
 }
 
+.image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .image__item:not(:last-child) {
   -ms-flex-preferred-size: calc((100% - 60px) / 3);
       flex-basis: calc((100% - 60px) / 3);

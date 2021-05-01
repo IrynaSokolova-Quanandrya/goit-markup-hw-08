@@ -6,7 +6,9 @@
 .section__title {
   padding-top: 0;
 }
-
+.image {
+  display: flex;
+}
 .image__item:not(:last-child) {
   flex-basis: calc((100% - 60px) / 3);
   margin-right: 30px;
