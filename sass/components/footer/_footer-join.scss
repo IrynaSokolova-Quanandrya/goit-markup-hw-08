@@ -16,9 +16,7 @@
 .networks {
   margin-left: 0;
 }
-.networks__link {
-  display: block;
-}
+
 .networks__item {
   border-radius: 50%;
 }
@@ -29,7 +27,6 @@
 }
 .networks__icon {
   fill: currentColor;
-  margin: 12px;
 }
 .networks__link:hover,
 .networks__link:focus {
