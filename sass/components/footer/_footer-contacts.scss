@@ -18,7 +18,7 @@
   }
 }
 .footer__contacts {
-  @media screen and (min-width: $mobile) {
+  @media screen and (max-width: 1199px) {
     margin-bottom: 60px;
   }
   @media screen and (min-width: $desktop) {
@@ -42,6 +42,9 @@
 
 .footer__logo {
   display: block;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
   margin-bottom: 20px;
   color: $backgroundColor;
 }
