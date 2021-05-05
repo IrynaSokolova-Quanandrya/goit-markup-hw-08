@@ -668,7 +668,6 @@ img {
         -ms-flex-pack: justify;
             justify-content: space-between;
     background-color: #ffffff;
-    padding: 48px 40px;
     display: none;
     padding: 48px 83px 48px 40px;
     z-index: 1;
@@ -677,6 +676,11 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    justify-items: center;
   }
 }
 
